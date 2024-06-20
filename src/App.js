@@ -23,7 +23,7 @@ function App(){
     <div>
       <h1>My app</h1>
       <nav>
-        <Link to={login}>Login</Link>
+        <Link to="/login">Login</Link>
       </nav>
       <Routes>
         <Route path='/login' element={<Login />}/>

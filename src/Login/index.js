@@ -1,7 +1,7 @@
 import './index.css';
 import { useState } from 'react';
 import { login } from './utils';
-import { useNavigate, Link} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 function Login(){
 const navigate = useNavigate();
 const [ username, setUserName] = useState('');
@@ -25,11 +25,12 @@ const handleLogin = async(event) => {
                 <br/>
                 <input placeholder="Enter password" type="password" onChange={(event)=> setPassword(event.target.value)}/>
                 <br/>
-                <button type="submit">Login</button>
+                {/* <button type="submit"><Link to='/'>Login</></button> */}
+                <Link to="/users"><button type='submit'>Login</button></Link>
             </form>
-            <p>
+            {/* <p>
                 <Link to="./login"></Link>
-            </p>
+            </p> */}
         </div>
     )
 }
