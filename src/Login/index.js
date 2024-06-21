@@ -1,7 +1,7 @@
 import './index.css';
 import { useState } from 'react';
 import { login } from './utils';
-import { Link, useNavigate} from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom';
 function Login(){
 const navigate = useNavigate();
 const [ username, setUserName] = useState('');
@@ -18,7 +18,7 @@ const handleLogin = async(event) => {
 
     return(
 
-        <div>
+        <div >
             <form onSubmit={handleLogin}>
                 <h2>Login</h2>
                 <input placeholder="Enter user name" type="text" onChange={(event)=>setUserName(event.target.value)}/>

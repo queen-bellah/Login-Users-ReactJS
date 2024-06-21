@@ -1,6 +1,7 @@
 import { Routes , Route, Link} from 'react-router-dom'
 import Login from "./Login"
 import Users from "./Users";
+import LoginLink from "./LoginLink"
 import { login } from './Login/utils';
 
 
@@ -21,10 +22,8 @@ function App(){
   return (
 
     <div>
-      <h1>My app</h1>
-      <nav>
-        <Link to="/login">Login</Link>
-      </nav>
+        <LoginLink/>
+        
       <Routes>
         <Route path='/login' element={<Login />}/>
       {/* <Login/> */}

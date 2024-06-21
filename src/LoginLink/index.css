@@ -1,0 +1,13 @@
+button{
+    padding: 12px 5px;
+    width: 10%;
+    margin-top: 1%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(97, 164, 97);color: white;
+    /* color: #f0f0f0; */
+    /* text-decoration: none; */
+    text-decoration: none;
+    color: white;
+
+}
